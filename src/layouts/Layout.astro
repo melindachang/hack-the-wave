@@ -1,0 +1,41 @@
+---
+import AppFooter from "../components/AppFooter.astro";
+import AppHeader from "../components/AppHeader.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Template built with tailwindcss using Tailus blocks v2"
+    />
+    <title>Hack the Wave | San Diego's premier high school hackathon!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white dark:bg-darker">
+    <AppHeader />
+    <slot />
+    <AppFooter />
+  </body>
+</html>
+<style>
+  html {
+    font-family: "DM Sans", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+  }
+</style>
