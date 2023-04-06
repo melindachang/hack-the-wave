@@ -2,210 +2,99 @@
 import Container from "./Container.astro";
 ---
 
-<!-- <div id="features">
+<div class="py-16">
   <Container>
-    <div class="md:w-2/3 lg:w-1/2">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="w-6 h-6 text-secondary"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
-          clip-rule="evenodd"></path>
-      </svg>
-
-      <h2
-        class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl"
-      >
-        What we offer
-      </h2>
-      <p class="text-gray-600 dark:text-gray-300">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ad ipsum
-        pariatur autem, fugit laborum in atque amet obcaecati? Nisi minima
-        aspernatur, quidem nulla cupiditate nam consequatur eligendi magni
-        adipisci.
-      </p>
-    </div>
     <div
-      class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4"
+      class="lg:bg-gray-50 dark:lg:bg-darker lg:p-16 space-y-6 md:flex md:gap-12 justify-center md:space-y-0 lg:items-center"
     >
-      <div
-        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
-      >
-        <div class="relative space-y-8 py-12 p-8">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png"
-            class="w-12"
-            width="512"
-            height="512"
-            alt="burger illustration"
-          />
-
-          <div class="space-y-2">
-            <h5
-              class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
-            >
-              First feature
-            </h5>
-            <p class="text-gray-600 dark:text-gray-300">
-              Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="flex items-center justify-between group-hover:text-secondary"
-          >
-            <span class="text-sm">Read more</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
-        </div>
+      <div class="w-1/2">
+        <img
+          class="rounded-2xl shadow-x border border-gray-800 transition hover:shadow-2xl"
+          src="images/assemble-2.JPG"
+          alt="image"
+          loading="lazy"
+          width=""
+          height=""
+        />
       </div>
-      <div
-        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
-      >
-        <div class="relative space-y-8 py-12 p-8">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png"
-            class="w-12"
-            width="512"
-            height="512"
-            alt="burger illustration"
-          />
-
-          <div class="space-y-2">
-            <h5
-              class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
-            >
-              Second feature
-            </h5>
-            <p class="text-gray-600 dark:text-gray-300">
-              Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="flex items-center justify-between group-hover:text-secondary"
-          >
-            <span class="text-sm">Read more</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div
-        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
-      >
-        <div class="relative space-y-8 py-12 p-8">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png"
-            class="w-12"
-            width="512"
-            height="512"
-            alt="burger illustration"
-          />
-
-          <div class="space-y-2">
-            <h5
-              class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
-            >
-              Third feature
-            </h5>
-            <p class="text-gray-600 dark:text-gray-300">
-              Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="flex items-center justify-between group-hover:text-secondary"
-          >
-            <span class="text-sm">Read more</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div
-        class="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
-      >
-        <div
-          class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800"
+      <div class="md:7/12 lg:w-1/2">
+        <h2
+          class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white"
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4341/4341025.png"
-            class="w-12"
-            width="512"
-            height="512"
-            alt="burger illustration"
-          />
+          An incredible experience at your fingertips.
+        </h2>
+        <p class="my-8 text-gray-600 dark:text-gray-300">
+          Hack the Wave is a San Diego-based hackathon run for high schoolers,
+          by high schoolers. We invite kids passionate about tech from all over
+          the county to come together for 24 hours, where they can
+          build software or hardware projects from scratch and compete for cool
+          prizes. All experience levels are welcome!
+        </p>
 
-          <div class="space-y-2">
-            <h5
-              class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
+        <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
+          <div class="mt-8 flex gap-4 md:items-center">
+            <div
+              class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20"
             >
-              More features
-            </h5>
-            <p class="text-gray-600 dark:text-gray-300">
-              Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
-            </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6 text-indigo-400 m-auto"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div class="w-5/6">
+              <h4
+                class="font-semibold text-lg text-gray-700 dark:text-indigo-300"
+              >
+                Time &amp; Date
+              </h4>
+              <p class="text-gray-500 dark:text-gray-400">
+                September 2 @ 12PM to September 3 @ 12PM.
+              </p>
+            </div>
           </div>
-          <a
-            href="#"
-            class="flex items-center justify-between group-hover:text-secondary"
-          >
-            <span class="text-sm">Read more</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+          <div class="pt-4 flex gap-4 md:items-center">
+            <div
+              class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20"
             >
-              <path
-                fill-rule="evenodd"
-                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div class="w-5/6">
+              <h4
+                class="font-semibold text-lg text-gray-700 dark:text-teal-300"
+              >
+                Location
+              </h4>
+              <p class="text-gray-500 dark:text-gray-400">
+                Currently TBA. Register for updates!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </Container>
-</div> -->
+</div>
+
 <div class="my-32" id="about">
   <Container>
-    <h3
-      class="text-2xl font-bold text-white md:w-2/3 md:text-3xl lg:text-4xl"
-    >
+    <h3 class="text-2xl font-bold text-white md:w-2/3 md:text-3xl lg:text-4xl">
       Build something awesome
     </h3>
     <div class="relative mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -222,9 +111,7 @@ import Container from "./Container.astro";
             height="512"
             width="512"
           /><div>
-            <h4 class="text-xl font-semibold text-white">
-              Make memories
-            </h4>
+            <h4 class="text-xl font-semibold text-white">Make memories</h4>
             <p class="mt-3 text-gray-600 dark:text-gray-400">
               Hackathons are a great place to get to know other passionate
               students. We welcome all hackers to team up and collaborate on
