@@ -1,0 +1,16 @@
+---
+const { url, imgPath, alt } = Astro.props;
+---
+
+<div class="slide grayscale transition duration-200 hover:grayscale-0">
+  <a href={url} target="_blank">
+    <img src={imgPath} class="h-7 w-auto mx-auto" alt={alt} /></a
+  >
+</div>
+
+<style lang="scss">
+  .slide {
+    width: 12rem;
+    position: relative;
+  }
+</style>
