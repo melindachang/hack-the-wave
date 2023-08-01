@@ -18,29 +18,9 @@ const entries = [
     alt: "nuvasive logo",
   },
   {
-    url: "https://www.mlh.io",
-    imgPath: "/images/sponsors/mlh-logo.svg",
-    alt: "mlh logo",
-  },
-  // {
-  //   url: "https://www.github.com",
-  //   imgPath: "/images/sponsors/github-logo.svg",
-  //   alt: "github logo",
-  // },
-  {
-    url: "https://www.twilio.com",
-    imgPath: "/images/sponsors/twilio-logo.svg",
-    alt: "twilio logo",
-  },
-  {
-    url: "https://radix.website/dot-tech",
-    imgPath: "/images/sponsors/dottech-logo.svg",
-    alt: "dot tech logo",
-  },
-  {
-    url: "https://stackoverflow.com",
-    imgPath: "/images/sponsors/stackoverflow-logo.svg",
-    alt: "stackoverflow logo",
+    url: "https://ulysses.app",
+    imgPath: '/images/sponsors/ulysses-logo.svg',
+    alt: 'ulysses logo'
   },
   {
     url: "https://www.wolfram.com",
@@ -78,7 +58,12 @@ const entries = [
         entries
           .concat(entries)
           .map((e) => (
-            <SponsorSlide url={e.url} imgPath={e.imgPath} alt={e.alt} />
+            <SponsorSlide
+              url={e.url}
+              imgPath={e.imgPath}
+              alt={e.alt}
+              style={e.alt === "github logo" ? "filter:invert(1)" : ""}
+            />
           ))
       }
     </div>
@@ -94,14 +79,14 @@ const entries = [
     );
   }
   $animationSpeed: 30s;
-  $logoNum: 6;
+  $logoNum: 8;
 
   @keyframes scroll {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-24rem * $logoNum));
+      transform: translateX(calc(-12rem * $logoNum));
     }
   }
 
@@ -134,7 +119,7 @@ const entries = [
     .slide-track {
       animation: scroll $animationSpeed linear infinite;
       display: flex;
-      width: calc(24rem * $logoNum * 2);
+      width: calc(12rem * $logoNum * 2);
     }
   }
 </style>
